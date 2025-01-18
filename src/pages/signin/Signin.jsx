@@ -1,12 +1,12 @@
 
 import React, { useEffect, useRef } from "react";
 import { gsap } from "gsap";
-import "./register.css";
+import "./signin.css";
 import "../../components/homepage.css"
 import Logo from "../../assets/Web_Logo.png";
 import avatar from "../../assets/generic-avatar.png";
 
-export default function Login() {
+export default function Signin() {
   const formRef = useRef(null);
 
   useEffect(() => {
@@ -18,33 +18,8 @@ export default function Login() {
   }, []);
 
   return (
-    <div className="login-main flex justify-center w-full h-full">
-      <div className="login_main w-3/4 bg-gray-950 mt-12 border-2 border-gray-400 flex rounded-3xl">
-        {/* Left Section */}
-        <div className="login_left w-3/5 p-10 pt-16">
-          <div className="h-auto">
-            <div className="flex mb-2 items-center">
-              <img className="h-7" src={Logo} alt="Logo" />
-              <h2 className="text-2xl font-bold raleway">Abstractions</h2>
-            </div>
-            <h2 className="text-4xl archivo font-bold">
-              Explore the leading Social Media
-              <span className="pink">Analytics Platform</span>
-            </h2>
-            <p className="text-sm text-gray-300 mt-4">
-              Explore new aspects about your socials, try out different things
-              while maintaining a balance. Grow your social media like never
-              before.
-            </p>
-            <div className="flex justify-center mt-12 items-center">
-              <img src={avatar} className="h-10 avatar" alt="Avatar" />
-              <p className="text-xs text-gray-300 ml-4">
-                Over <span className="text-white text-sm font-bold">2+</span>
-                Happy Customers
-              </p>
-            </div>
-          </div>
-        </div>
+    <div className="login-main flex justify-center w-full h-full rounded-3xl">
+     
 
         {/* Right Section */}
         <div className="login_right bg-gray-800 w-2/5">
@@ -58,7 +33,7 @@ export default function Login() {
             <div className="login-buttons flex gap-x-4 justify-center mt-6">
               <button
                 type="button"
-                className="text-white w-full bg-red-700 hover:bg-red-800 focus:ring-2 focus:outline-none focus:ring-white font-medium rounded-lg text-sm px-6 py-2.5 flex items-center justify-center"
+                className="text-white w-full bg-red-700 hover:bg-red-800 focus:ring-2 focus:outline-none focus:ring-white font-medium rounded-lg text-sm px-2 py-2.5 flex items-center justify-center"
               >
                 <svg
                   className="mr-2 w-5 h-5"
@@ -94,11 +69,11 @@ export default function Login() {
               </button>
             </div>
 
-            <hr className="h-0.5 bg-gray-500 my-6" />
+            <hr className="h-0.5 bg-gray-500 my-6 " />
 
             {/* Form */}
             <form>
-              <div className="my-4">
+              {/* <div className="my-4">
                 <label className="text-sm font-semibold" htmlFor="Name">
                   What should we call you?
                 </label>
@@ -109,7 +84,7 @@ export default function Login() {
                   required
                   placeholder="John Doe"
                 />
-              </div>
+              </div> */}
               <div className="my-4">
                 <label className="text-sm font-semibold" htmlFor="Email">
                   Your work-mail:
@@ -151,15 +126,15 @@ export default function Login() {
             {/* Footer */}
             <div className="text-center mt-4">
               <p className="text-xs font-medium">
-                Already have an account?{" "}
-                <a href="/signin" className="text-blue-500">
-                  Login Here
+                Don't have an account?{" "}
+                <a href="/register" className="text-blue-500">
+                  register
                 </a>
               </p>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    
   );
 }
