@@ -3,8 +3,8 @@ import React, { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import "./register.css";
 import "../../components/homepage.css"
-import Logo from "./Web_logo.png";
-import avatar from "./generic-avatar.png";
+import Logo from "../../assets/Web_Logo.png";
+import avatar from "../../assets/generic-avatar.png";
 
 export default function Login() {
   const formRef = useRef(null);
@@ -28,7 +28,7 @@ export default function Login() {
               <h2 className="text-2xl font-bold raleway">Abstractions</h2>
             </div>
             <h2 className="text-4xl archivo font-bold">
-              Explore the leading Social Media{" "}
+              Explore the leading Social Media
               <span className="pink">Analytics Platform</span>
             </h2>
             <p className="text-sm text-gray-300 mt-4">
@@ -39,7 +39,7 @@ export default function Login() {
             <div className="flex justify-center mt-12 items-center">
               <img src={avatar} className="h-10 avatar" alt="Avatar" />
               <p className="text-xs text-gray-300 ml-4">
-                Over <span className="text-white text-sm font-bold">2+</span>{" "}
+                Over <span className="text-white text-sm font-bold">2+</span>
                 Happy Customers
               </p>
             </div>

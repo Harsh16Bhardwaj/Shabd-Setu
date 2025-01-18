@@ -28,7 +28,7 @@ body {
   /* Left Section */
   .login_left {
     height: 100vh;
-    background-image: url('../../../../public/pxfuel-2.jpg');
+    background-image: url('../../assets/pxfuel-2.jpg');
     background-size: cover;
     color: #fff;
     padding: 20px;
