@@ -9,7 +9,7 @@ function Dashboard1() {
           <hr className="h-0.5 bg-white w-full " />
         </div>
         <div className="bg-gray-900 w-4/5">
-          <h1>Catalogue</h1>
+          <h1 className="">Catalogue</h1>
           <div></div>
         </div>
       </div>
