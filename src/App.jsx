@@ -1,7 +1,16 @@
+import { Outlet } from "react-router-dom";
+import Footer from "./components/footer/footer";
+import Header from "./components/header/Header";
+
 export default function App() {
+  console.log(import.meta.env.VITE_APPWRITE_URL);
   return (
-    <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
-  )
+    <div className="wrapper">
+      <Header />
+      <main>
+        <Outlet />
+      </main>
+      <Footer />
+    </div>
+  );
 }
