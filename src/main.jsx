@@ -8,7 +8,7 @@ import Home from './pages/Home.jsx';
 import Dashboard from './pages/DashBoard.jsx';
 import Login from './pages/Login/register.jsx';
 import Signin from './pages/signin/Signin.jsx';
-import Dashboard1 from './pages/dashboard/dashboard.jsx';
+import Dashboard1 from './pages/posts/dashboard.jsx';
 const router = createBrowserRouter([
   {
     path: "/",
