@@ -4,10 +4,11 @@ import './index.css'
 import App from './App.jsx'
 import { Provider } from "react-redux";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Home from './pages/home.jsx';
+import Home from './pages/Home.jsx';
 import Dashboard from './pages/DashBoard.jsx';
 import Login from './pages/Login/register.jsx';
 import Signin from './pages/signin/Signin.jsx';
+import Dashboard1 from './pages/dashboard/dashboard.jsx';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -16,7 +17,8 @@ const router = createBrowserRouter([
       { path: "/", element: <Home></Home> },
       {path : "/dashboard", element: <Dashboard></Dashboard>},
       {path:"/register",element:<Login></Login>},
-      {path:"/signin",element:<Signin></Signin>}
+      {path:"/signin",element:<Signin></Signin>},
+      {path:"/dash",element:<Dashboard1></Dashboard1>}
     ],
   },
 ]);

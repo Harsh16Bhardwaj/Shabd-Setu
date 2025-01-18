@@ -1,27 +1,30 @@
 import { ArrowRight, Globe2, Languages, Video, Zap } from "lucide-react";
 import { Link } from "react-router-dom";
+import './home.css'
+import Demo from "../components/demo/demo";
 function Home({ onGetStarted }) {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-50">
+    <div className="min-h-screen bg-gray-900">
       {/* Hero Section */}
       <section className="pt-20 pb-32 relative overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <h1 className="text-white text-center text-7xl mb-6 josefin font-bold mt-20 heading">Shabd-Setu</h1>
           <div className="text-center max-w-3xl mx-auto">
-            <h1 className="text-5xl font-bold text-gray-900 mb-6">
+            <h1 className="text-3xl josefin font-bold text-gray-200 mb-6 ">
               Share Your Stories in
-              <span className="bg-gradient-to-r from-indigo-600 to-blue-500 bg-clip-text text-transparent">
-                Every Language
+              <span className="bg-gradient-to-r text-5xl signika sub-head bg-clip-text text-transparent ">
+                 -Every Language
               </span>
             </h1>
-            <p className="text-xl text-gray-600 mb-8">
+            <p className="text-lg text-gray-600 mb-8 -mt-2">
               Transform your content into multiple Indian languages instantly.
               Reach millions of readers across the country with our AI-powered
-              translation platform.
+              translation and transcriptions. Go all out.
             </p>
             <Link to={"/dashboard"}>
               <button
                 onClick={onGetStarted}
-                className="px-8 py-4 bg-indigo-600 text-white rounded-xl hover:bg-indigo-700 transition-all font-medium text-lg flex items-center gap-2 mx-auto"
+                className="px-8 py-4 bg-indigo-600 text-white rounded-xl hover:bg-red-400 transition-all duration-400  font-semibold text-lg flex items-center gap-2 mx-auto"
               >
                 Start Writing Now
                 <ArrowRight className="h-5 w-5" />
@@ -79,8 +82,10 @@ function Home({ onGetStarted }) {
         </div>
       </section>
 
+      <Demo/>
+
       {/* CTA */}
-      <section className="py-24 bg-gradient-to-br from-indigo-600 to-blue-700 text-white">
+      <section className="py-24 more text-white ">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-bold mb-6">
             Ready to Reach More Readers?

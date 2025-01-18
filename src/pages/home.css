@@ -1,0 +1,52 @@
+.merriweather{
+    font-family: "Merriweather", serif;
+}
+.raleway{
+    font-family: "Raleway", serif;
+}
+.oswald{
+    font-family: "Oswald", serif;
+}
+.josefin{
+    font-family: "Josefin Sans", serif;
+}
+.signika{
+    font-family: "Signika Negative", serif;
+}
+.archivo{
+    font-family: "Archivo", serif;
+}
+.script{
+    font-family: "Style Script", serif;
+}
+.poppins{
+    font-family: "Poppins", serif;
+}
+.pink{
+    color:#ff0080;
+}
+.bg-pink{
+    background-color: #ff0080;
+}
+
+*{
+    ::selection {
+        background-color: #ff0080; /* Background color of selected text */
+        color: white; /* Color of the selected text */
+    }
+    
+}
+
+.heading{
+    text-decoration: underline;
+    text-underline-offset: 12px;
+    text-decoration-thickness: 3px;
+    text-decoration-color: #ff0080;
+}
+.sub-head{
+    color: #ff0080;
+}
+
+.more{
+    background-image: linear-gradient(#DA4453,#89216B);
+}

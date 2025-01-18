@@ -7,8 +7,9 @@ import {
   Pencil,
   Eye,
 } from "lucide-react";
-import Footer from "../components/footer/footer";
+import Footer from "../components/footer/footer_copy";
 import Header from "../components/header/Header";
+import transcribe from "../utils/transcribe";
 
 const languages = [
   { code: "hi", name: "Hindi" },
@@ -39,6 +40,7 @@ function Dashboard({ onBack }) {
   const handleTranscribe = () => {
     setIsTranscribing(true);
     setTimeout(() => {
+      transcribe("https://assembly.ai/sports_injuries.mp3")
       setIsTranscribing(false);
       setContent("Your transcribed content will appear here...");
       alert("Video transcribed successfully!");

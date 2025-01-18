@@ -1,0 +1,114 @@
+.merriweather{
+    font-family: "Merriweather", serif;
+}
+.raleway{
+    font-family: "Raleway", serif;
+}
+.oswald{
+    font-family: "Oswald", serif;
+}
+.josefin{
+    font-family: "Josefin Sans", serif;
+}
+.signika{
+    font-family: "Signika Negative", serif;
+}
+.archivo{
+    font-family: "Archivo", serif;
+}
+.script{
+    font-family: "Style Script", serif;
+}
+.poppins{
+    font-family: "Poppins", serif;
+}
+.pink{
+    color:#ff0080;
+}
+.bg-pink{
+    background-color: #ff0080;
+}
+
+*{
+    ::selection {
+        background-color: #ff0080; /* Background color of selected text */
+        color: white; /* Color of the selected text */
+    }
+    
+}
+
+
+/* Basic styles */
+.a {
+    position: relative;
+    text-decoration: none;
+    color: #b4b3b3;
+  }
+.a:hover{
+    cursor: pointer;
+    color: #ffffff;
+    transition: all 0.4s ease-in-out;
+}
+  
+  .a::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 1px;
+    background-color: #ff0080;
+    transition: width 0.6s cubic-bezier(0.25, 0.8, 0.25, 1), left 0.6s ease-out, transform 0.6s ease-out;
+    transform: translateX(-50%);
+  }
+  
+  .a:hover::before {
+    width: 100%;
+    left: 0;
+    transform: translateX(0);
+  }
+  
+
+  /*Logo*/
+  .logo{
+    animation: spinRandom 7s infinite ease-in-out;
+
+  }
+
+  @keyframes spinRandom {
+    0% {
+        transform: rotate(0deg);
+    }
+    20% {
+        transform: rotate(45deg);
+    }
+    40% {
+        transform: rotate(180deg);
+    }
+    60% {
+        transform: rotate(135deg);
+    }
+    80% {
+        transform: rotate(-90deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.logo-highlight{
+    color: #ff0080;
+}
+
+.get-started{
+    background-color: #ff0080;
+}
+
+.a:hover{
+    color: white;
+}
+
+.hello:hover{
+    color: white !important;
+
+}

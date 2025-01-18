@@ -1,0 +1,83 @@
+.social-icons {
+    display: flex;
+    gap: 20px;
+}
+:root{
+    --var1: #ffc900;
+}
+
+.icon {
+    font-size: 50px; /* Larger size for a premium look */
+    padding: 15px; /* Increase padding for a better touch target */
+    border: 2px solid transparent; /* No visible border by default */
+    border-radius: 50%; /* Circular outline */
+    color: white; /* Default icon color */
+    transition: background-color 0.3s, color 0.3s;
+    display: flex; /* Centering the icon */
+    justify-content: center;
+    align-items: center;
+}
+.youtube{
+    color:var(--var1);
+    background-color: #dfdfdf39;
+}
+.youtube:hover {
+    background-color: #FF0000; /* YouTube red */
+    color: white;
+    /* transform: rotate(2);
+    transform: scale(1.1); */
+}
+.linkedin{
+    color: #ffc900;
+    background-color: #dfdfdf39;
+}
+.linkedin:hover {
+    background-color: #0077B5; /* LinkedIn blue */
+    color: white;
+}
+.instagram{
+    color: #ffc900;
+    background-color: #dfdfdf39;
+}
+.instagram:hover {
+    background-color: #C13584; /* Instagram pink */
+    color: #ffc900;
+}
+.twitter{
+    color: #ffc900;
+    background-color: #dfdfdf39;
+}
+.twitter:hover {
+    background-color: #ffffff; /* Twitter blue */
+    color: rgb(0, 0, 0);
+}
+.github{
+    color: #ffc900;
+    background-color: #dfdfdf39;
+}
+.github:hover {
+    background-color: #333; /* GitHub gray */
+    color: white;
+}
+
+
+.floating {
+    width: 100%;
+    padding-top: 1rem;
+    display: flex;
+    justify-content: center;
+    animation: float 2s ease-in-out infinite;
+    font-size: 50px; /* Adjust size as needed */
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px); /* Adjust the floating height */
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
