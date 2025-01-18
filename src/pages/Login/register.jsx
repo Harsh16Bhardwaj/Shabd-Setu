@@ -5,7 +5,11 @@ import "./register.css";
 import "../../components/homepage.css"
 import Logo from "../../assets/Web_Logo.png";
 import avatar from "../../assets/generic-avatar.png";
-
+import { login as storeLogin } from "../../store/authSlice";
+import authService from "../../appwrite/auth";
+import { useForm } from "react-hook-form";
+import { Link, useNavigate } from "react-router-dom";
+import { useDispatch } from "react-redux";
 export default function Login() {
   const formRef = useRef(null);
 
