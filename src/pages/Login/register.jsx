@@ -1,4 +1,3 @@
-
 import React, { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import "./register.css";
@@ -18,39 +17,39 @@ export default function Login() {
   }, []);
 
   return (
-    <div className="login-main flex justify-center w-full h-full">
-      <div className="login_main w-3/4 bg-gray-950 mt-12 border-2 border-gray-400 flex rounded-3xl">
+    <div className="login-main flex justify-center w-full h-full bg-gradient-to-br from-gray-900 to-black">
+      <div className="login_main w-3/4 bg-gray-950/90 mt-12 border border-gray-700 flex rounded-3xl backdrop-blur-lg shadow-2xl">
         {/* Left Section */}
-        <div className="login_left w-3/5 p-10 pt-16">
+        <div className="login_left w-3/5 p-12 pt-16">
           <div className="h-auto">
-            <div className="flex mb-2 items-center">
-              <img className="h-7" src={Logo} alt="Logo" />
-              <h2 className="text-2xl font-bold raleway">Abstractions</h2>
+            <div className="flex mb-4 items-center">
+              <img className="h-8 mr-3" src={Logo} alt="Logo" />
+              <h2 className="text-2xl font-bold raleway text-white">Abstractions</h2>
             </div>
-            <h2 className="text-4xl archivo font-bold">
+            <h2 className="text-5xl archivo font-extrabold leading-tight">
               Explore the leading Social Media
-              <span className="pink">Analytics Platform</span>
+              <span className="bg-gradient-to-r from-pink-500 to-purple-500 text-transparent bg-clip-text"> Analytics Platform</span>
             </h2>
-            <p className="text-sm text-gray-300 mt-4">
+            <p className="text-lg text-gray-300 mt-6 leading-relaxed">
               Explore new aspects about your socials, try out different things
               while maintaining a balance. Grow your social media like never
               before.
             </p>
-            <div className="flex justify-center mt-12 items-center">
-              <img src={avatar} className="h-10 avatar" alt="Avatar" />
-              <p className="text-xs text-gray-300 ml-4">
-                Over <span className="text-white text-sm font-bold">2+</span>
-                Happy Customers
+            <div className="flex justify-start mt-16 items-center bg-gray-800/50 p-4 rounded-xl">
+              <img src={avatar} className="h-12 avatar" alt="Avatar" />
+              <p className="text-sm text-gray-300 ml-4">
+                Over <span className="text-white text-lg font-bold">2+</span>
+                <br/>Happy Customers
               </p>
             </div>
           </div>
         </div>
 
         {/* Right Section */}
-        <div className="login_right bg-gray-800 w-2/5">
-          <div className="form-data p-10 pl-12 text-lg" ref={formRef}>
+        <div className="login_right bg-gray-800/50 w-2/5 backdrop-blur-sm">
+          <div className="form-data p-12 text-lg" ref={formRef}>
             {/* Heading */}
-            <h1 className="text-gray-300 poppins font-bold text-center mb-4">
+            <h1 className="text-white poppins text-2xl font-bold text-center mb-6">
               Your Journey Starts Here!
             </h1>
 
@@ -58,7 +57,7 @@ export default function Login() {
             <div className="login-buttons flex gap-x-4 justify-center mt-6">
               <button
                 type="button"
-                className="text-white w-full bg-red-700 hover:bg-red-800 focus:ring-2 focus:outline-none focus:ring-white font-medium rounded-lg text-sm px-6 py-2.5 flex items-center justify-center"
+                className="text-white w-full bg-gradient-to-r from-red-600 to-red-700 hover:from-red-700 hover:to-red-800 focus:ring-2 focus:outline-none focus:ring-red-500 font-medium rounded-lg text-sm px-6 py-3 flex items-center justify-center transition duration-300"
               >
                 <svg
                   className="mr-2 w-5 h-5"
@@ -78,7 +77,7 @@ export default function Login() {
               </button>
               <button
                 type="button"
-                className="py-2 px-6 bg-gray-600 hover:bg-gray-700 text-white font-medium rounded-lg text-sm flex items-center justify-center"
+                className="py-3 px-6 bg-gradient-to-r from-gray-700 to-gray-800 hover:from-gray-800 hover:to-gray-900 text-white font-medium rounded-lg text-sm flex items-center justify-center transition duration-300"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -94,66 +93,67 @@ export default function Login() {
               </button>
             </div>
 
-            <hr className="h-0.5 bg-gray-500 my-6" />
+            <hr className="h-0.5 bg-gray-600 my-8" />
 
             {/* Form */}
-            <form>
-              <div className="my-4">
-                <label className="text-sm font-semibold" htmlFor="Name">
+            <form className="space-y-6">
+              <div>
+                <label className="text-sm font-semibold text-gray-200" htmlFor="Name">
                   What should we call you?
                 </label>
                 <input
-                  className="bg-gray-300 rounded-lg w-full mt-2 h-9 input-box"
+                  className="bg-gray-700/50 text-white rounded-lg w-full mt-2 h-11 input-box border border-gray-600 focus:border-purple-500 focus:ring-2 focus:ring-purple-500 transition duration-300"
                   type="text"
                   name="Name"
                   required
                   placeholder="John Doe"
                 />
               </div>
-              <div className="my-4">
-                <label className="text-sm font-semibold" htmlFor="Email">
+              <div>
+                <label className="text-sm font-semibold text-gray-200" htmlFor="Email">
                   Your work-mail:
                 </label>
                 <input
-                  className="bg-gray-300 rounded-lg w-full mt-2 h-9 input-box"
+                  className="bg-gray-700/50 text-white rounded-lg w-full mt-2 h-11 input-box border border-gray-600 focus:border-purple-500 focus:ring-2 focus:ring-purple-500 transition duration-300"
                   type="email"
                   name="Email"
                   required
                   placeholder="you@example.com"
                 />
               </div>
-              <div className="my-4">
-                <label className="text-sm font-semibold" htmlFor="Password">
+              <div>
+                <label className="text-sm font-semibold text-gray-200" htmlFor="Password">
                   Your password:
                 </label>
                 <input
-                  className="bg-gray-300 rounded-lg w-full mt-2 h-9 input-box"
+                  className="bg-gray-700/50 text-white rounded-lg w-full mt-2 h-11 input-box border border-gray-600 focus:border-purple-500 focus:ring-2 focus:ring-purple-500 transition duration-300"
                   type="password"
                   name="Password"
                   required
                   placeholder="************"
                 />
               </div>
-              <div className="flex items-start mb-4">
-                <input type="checkbox" className="mt-1" name="Verify" />
-                <label className="text-xs ml-2">
+              <div className="flex items-start">
+                <input type="checkbox" className="mt-1 rounded border-gray-600 text-purple-500 focus:ring-purple-500" name="Verify" />
+                <label className="text-xs ml-2 text-gray-300">
                   By signing up, you agree to our Terms of Use and Privacy
                   Policy.
                 </label>
               </div>
-              <input
+              <button
                 type="submit"
-                className="mt-4 poppins bg-blue-800 text-white w-full font-medium p-2 rounded-lg cursor-pointer hover:bg-blue-900"
-                value="Create an Account"
-              />
+                className="mt-6 poppins bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white w-full font-medium p-3 rounded-lg cursor-pointer transition duration-300 transform hover:scale-[1.02]"
+              >
+                Create an Account
+              </button>
             </form>
 
             {/* Footer */}
-            <div className="text-center mt-4">
-              <p className="text-xs font-medium">
+            <div className="text-center mt-6">
+              <p className="text-sm text-gray-300">
                 Already have an account?{" "}
-                <a href="/signin" className="text-blue-500">
-                  Login Here
+                <a href="/signin" className="text-purple-400 hover:text-purple-300 font-medium transition duration-300">
+                  Login 
                 </a>
               </p>
             </div>
